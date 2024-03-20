@@ -1,25 +1,28 @@
 {
-  "name": "portfolio24",
-  "version": "1.0.0",
-  "description": "Portfolio website v.1",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Phil-G-94/portfolio24.git"
-  },
-  "author": "philg",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Phil-G-94/portfolio24/issues"
-  },
-  "homepage": "https://github.com/Phil-G-94/portfolio24#readme",
-  "devDependencies": {
-    "nodemon": "^3.1.0"
-  },
-  "dependencies": {
-    "express": "^4.19.0"
-  }
+    "name": "portfolio24",
+    "type": "module",
+    "version": "1.0.0",
+    "description": "Portfolio website v.1",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Phil-G-94/portfolio24.git"
+    },
+    "author": "philg",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Phil-G-94/portfolio24/issues"
+    },
+    "homepage": "https://github.com/Phil-G-94/portfolio24#readme",
+    "devDependencies": {
+        "nodemon": "^3.1.0"
+    },
+    "dependencies": {
+        "ejs": "^3.1.9",
+        "express": "^4.19.0"
+    }
 }
