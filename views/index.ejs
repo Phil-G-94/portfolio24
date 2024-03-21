@@ -14,8 +14,36 @@
     </head>
     <body class="flex_container_col">
         <%- include("includes/navigation.ejs") %>
-        <main>
+        <main class="flex_container_col">
             <h1>Portfolio</h1>
+
+            <section id="about-me-section">
+                <h2>About Me</h2>
+
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto adipisci id
+                voluptates eum, alias suscipit omnis laboriosam natus, ab illum dolorum quisquam
+                minima ratione explicabo mollitia tempore nisi praesentium distinctio! Lorem ipsum,
+                dolor sit amet consectetur adipisicing elit. Velit mollitia molestias doloribus,
+                reprehenderit quod rem? Laudantium optio non repudiandae vel excepturi voluptatibus
+                necessitatibus aperiam quia, itaque autem dolores est nihil? Lorem ipsum dolor sit
+                amet, consectetur adipisicing elit. Culpa veritatis repudiandae aliquam quia, qui
+                dolorem optio minima impedit ratione rerum porro nesciunt voluptatibus
+                necessitatibus unde tenetur vitae? Mollitia, delectus ipsam!
+            </section>
+
+            <section id="projects-section">
+                <h2>Projects</h2>
+                Here I want to display three projects in grid format. Each project should have a
+                card that contains <b>title, image and brief description</b>
+                The card should be clickable, and should navigate to a dynamic route where the user
+                can view the project in greater detail.
+            </section>
+
+            <section id="contact-section">
+                <h2>Contact</h2>
+                Here I want to display a contact section that contains icons for LinkedIn, Discord
+                and Email. Can maybe scoped further to integrate a contact form with recaptcha.
+            </section>
         </main>
     </body>
 </html>
