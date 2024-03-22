@@ -84,14 +84,30 @@ h6 {
     padding: 0;
 }
 
-/* component styles */
+/* element styles */
 
-section {
+body {
+    font-family: monospace;
+}
+
+/* component styles */
+.about-me {
     display: flex;
     flex-direction: column;
     place-items: center;
-
     margin: 5em;
+}
+
+.about-me p {
+    padding: 1em;
+}
+
+.about-me img {
+    border-radius: 25px;
+    border: 2px solid black;
+    object-fit: contain;
+    /* align-items: flex-end; */
+    width: 25%;
 }
 
 /* media queries */
