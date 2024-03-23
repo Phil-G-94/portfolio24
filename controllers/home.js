@@ -1,6 +1,12 @@
+import { Projects } from "../model/projects.js";
+
 const getHomePage = (req, res, next) => {
 
-    res.render("index", { pageTitle: "Portfolio", path: "/" });
+    Projects.fetchProjects((projects) => {
+        res.render("index", { pageTitle: "Portfolio", path: "/", projects: projects });
+    });
+
+
 };
 
 export { getHomePage };
