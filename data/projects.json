@@ -8,5 +8,10 @@
         "title": "Project 2",
         "description": "Project two description",
         "image": "../public/images/stock-image.jpg"
+    },
+    {
+        "title": "Project 3",
+        "description": "Project three description",
+        "image": "../public/images/stock-image.jpg"
     }
 ]

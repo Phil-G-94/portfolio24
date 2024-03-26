@@ -11,7 +11,6 @@ class Projects {
     static fetchProjects(cb) {
         readFile(p, (err, fileContent) => {
 
-
             if (err) {
                 return cb([]);
             }

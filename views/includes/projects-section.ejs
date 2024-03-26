@@ -1,7 +1,19 @@
 <article>
-    <h2>Projects</h2>
-    Here I want to display three projects in grid format. Each project should have a card that
-    contains <b>title, image and brief description</b>
-    The card should be clickable, and should navigate to a dynamic route where the user can view the
-    project in greater detail.
+    <h2><%= pageTitle %></h2>
+    <p>
+        Here I want to display three projects in grid format. Each project should have a card that
+        contains <b>title, image and brief description</b>
+        The card should be clickable, and should navigate to a dynamic route where the user can view
+        the project in greater detail.
+    </p>
+
+    <div class="grid_container_col">
+        <% for (const project of projects) { %>
+        <div>
+            <h3><%= project.title %></h3>
+            <img src="<%= project.image %>" />
+            <p><%= project.description %></p>
+        </div>
+        <% } %>
+    </div>
 </article>
