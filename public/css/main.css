@@ -86,8 +86,13 @@ h6 {
 
 .grid_container_col {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     place-items: center;
+    gap: 2em;
+}
+
+.project_card {
+    padding: 0 auto;
 }
 
 /* element styles */
@@ -96,7 +101,7 @@ body {
     font-family: monospace;
 }
 
-/* component styles */
+/* class styles */
 .about-me {
     display: flex;
     flex-direction: column;
@@ -112,7 +117,6 @@ body {
     border-radius: 25px;
     border: 2px solid black;
     object-fit: contain;
-    /* align-items: flex-end; */
     width: 25%;
 }
 
@@ -122,14 +126,14 @@ body {
     .flex_container_col {
         display: flex;
         flex-direction: column;
-        place-content: center;
+        place-items: center;
         width: 35%;
     }
 
     .grid_container_col {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
-        place-content: center;
+        place-items: center;
         width: 35%;
     }
 }
@@ -145,7 +149,7 @@ body {
     .grid_container_col {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
-        place-content: center;
+        place-items: center;
         width: 65%;
     }
 }
@@ -155,13 +159,11 @@ body {
         display: flex;
         flex-direction: column;
         place-items: center;
-        width: 100%;
     }
 
     .grid_container_col {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
-        place-content: center;
-        width: 100%;
+        place-items: center;
     }
 }
