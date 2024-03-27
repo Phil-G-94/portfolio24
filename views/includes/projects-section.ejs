@@ -7,13 +7,15 @@
         the project in greater detail.
     </p>
 
-    <div class="grid_container_col">
-        <% for (const project of projects) { %>
-        <div class="project_card">
-            <h3><%= project.title %></h3>
-            <img src="<%= project.image %>" />
-            <p><%= project.description %></p>
+    <section class="flex_container_col">
+        <div class="grid_container_col">
+            <% for (const project of projects) { %>
+            <div class="project_card">
+                <h3><%= project.title %></h3>
+                <img src="<%=project.image%>" />
+                <p><%= project.description %></p>
+            </div>
+            <% } %>
         </div>
-        <% } %>
-    </div>
+    </section>
 </article>

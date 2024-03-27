@@ -67,6 +67,12 @@ h6 {
     isolation: isolate;
 }
 
+/* element styles */
+
+body {
+    font-family: monospace;
+}
+
 /* containers */
 .flex_container_col {
     display: flex;
@@ -86,27 +92,19 @@ h6 {
 
 .grid_container_col {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2;
     place-items: center;
     gap: 2em;
 }
 
-.project_card {
-    padding: 0 auto;
-}
-
-/* element styles */
-
-body {
-    font-family: monospace;
+.grid_container_col:nth-last-child(1) {
+    justify-self: center;
 }
 
 /* class styles */
 .about-me {
-    display: flex;
-    flex-direction: column;
-    place-items: center;
-    margin: 5em;
+    margin: 10em;
 }
 
 .about-me p {
@@ -120,6 +118,15 @@ body {
     width: 25%;
 }
 
+.project_card {
+    background-color: blanchedalmond;
+}
+
+.project_card img {
+    object-fit: contain;
+    width: 35%;
+}
+
 /* media queries */
 
 @media screen and (max-width < 768px) {
@@ -127,13 +134,10 @@ body {
         display: flex;
         flex-direction: column;
         place-items: center;
-        width: 35%;
     }
 
-    .grid_container_col {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
-        place-items: center;
+    .project_card img {
+        object-fit: contain;
         width: 35%;
     }
 }
@@ -142,14 +146,7 @@ body {
     .flex_container_col {
         display: flex;
         flex-direction: column;
-        place-items: center;
-        width: 65%;
-    }
-
-    .grid_container_col {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
-        place-items: center;
+        place-content: center;
         width: 65%;
     }
 }
@@ -158,12 +155,6 @@ body {
     .flex_container_col {
         display: flex;
         flex-direction: column;
-        place-items: center;
-    }
-
-    .grid_container_col {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
         place-items: center;
     }
 }
