@@ -1,21 +1,27 @@
-<article class="flex_container_col projects-section">
+<article class="projects-section">
     <h2><%= pageTitle %></h2>
 
-    <div>
-        <p>
+    <div class="flex_container_col">
+        <p class="projects_text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel impedit nemo aspernatur
-            qui delectus atque voluptates nam totam. In perspiciatis pariatur odio molestias
-            dignissimos ex nulla repellat asperiores suscipit voluptatibus!
+            qui delectus atque voluptates nam totam. <br />
+            In perspiciatis pariatur odio molestias dignissimos ex nulla repellat asperiores
+            suscipit voluptatibus!
         </p>
     </div>
 
     <section>
-        <div class="grid_container_col">
+        <div class="project_flex_container_col">
             <% for (const project of projects) { %>
-            <div class="project_card flex_container_row">
-                <p class="project_title"><%= project.title %></p>
-                <p class="project_description"><%= project.description %></p>
-            </div>
+            <a
+                href="/"
+                class="project_flex_item_col"
+            >
+                <div class="project_info">
+                    <p class="project_flex_item"><%= project.title %></p>
+                    <p class="project_flex_item"><%= project.description %></p>
+                </div>
+            </a>
             <% } %>
         </div>
     </section>
