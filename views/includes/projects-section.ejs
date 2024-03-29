@@ -1,19 +1,20 @@
-<article>
+<article class="flex_container_col projects-section">
     <h2><%= pageTitle %></h2>
-    <p>
-        Here I want to display three projects in grid format. Each project should have a card that
-        contains <b>title, image and brief description</b>
-        The card should be clickable, and should navigate to a dynamic route where the user can view
-        the project in greater detail.
-    </p>
 
-    <section class="flex_container_col">
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel impedit nemo aspernatur
+            qui delectus atque voluptates nam totam. In perspiciatis pariatur odio molestias
+            dignissimos ex nulla repellat asperiores suscipit voluptatibus!
+        </p>
+    </div>
+
+    <section>
         <div class="grid_container_col">
             <% for (const project of projects) { %>
-            <div class="project_card">
-                <h3><%= project.title %></h3>
-                <img src="<%=project.image%>" />
-                <p><%= project.description %></p>
+            <div class="project_card flex_container_row">
+                <p class="project_title"><%= project.title %></p>
+                <p class="project_description"><%= project.description %></p>
             </div>
             <% } %>
         </div>

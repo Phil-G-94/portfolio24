@@ -5,8 +5,6 @@ import rootDir from "../utils/path.js";
 
 const p = path.join(rootDir, "portfolio24", "data", "projects.json");
 
-console.log(p);
-
 class Projects {
     static fetchProjects(cb) {
         readFile(p, (err, fileContent) => {
