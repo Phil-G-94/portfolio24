@@ -5,16 +5,31 @@ import rootDir from "../utils/path.js";
 
 const p = path.join(rootDir, "portfolio24", "data", "projects.json");
 
+const getProjectsFromFile = (cb) => {
+    readFile(p, (err, fileContent) => {
+
+        if (err) {
+            return cb([]);
+        }
+
+        cb(JSON.parse(fileContent));
+    });
+};
+
 class Projects {
-    static fetchProjects(cb) {
-        readFile(p, (err, fileContent) => {
 
-            if (err) {
-                return cb([]);
-            }
+    static fetchAllProjectsFromFile(cb) {
+        getProjectsFromFile(cb);
+    }
 
-            cb(JSON.parse(fileContent));
+    static fetchProjectById(id, cb) {
+
+        getProjectsFromFile(projects => {
+            const project = projects.find(project => project.id === id);
+
+            cb(project);
         });
+
     }
 }
 
