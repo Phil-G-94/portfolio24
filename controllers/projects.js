@@ -5,16 +5,20 @@ const getProjectDetailPage = (req, res, next) => {
 
     console.log(projectId);
 
-    Projects.fetchProjectById(projectId, project => {
-        console.log(project);
 
-        res.render("project/project-detail", {
-            project: project,
-            pageTitle: project.title,
-            path: "/projects/:projectId"
-        });
-    });
+    res.render("../project/project-detail");
 
+    // Projects.fetchProjectById(projectId, project => {
+    //     console.log(project);
+
+    //     res.render("../project/project-detail", {
+    //         project: project,
+    //         pageTitle: project.title,
+    //         path: `/project/${project.id}`
+    //     });
+
+
+    // });
 };
 
 export { getProjectDetailPage };

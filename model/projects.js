@@ -27,6 +27,8 @@ class Projects {
         getProjectsFromFile(projects => {
             const project = projects.find(project => project.id === id);
 
+            console.log(project);
+
             cb(project);
         });
 
