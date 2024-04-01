@@ -1,8 +1,9 @@
 import express from "express";
-import { getHomePage as homePageController } from "../controllers/home.js";
+import * as homePageController from "../controllers/home.js";
 
 const router = express.Router();
 
-router.get("/", homePageController);
+router.get("/", homePageController.getHomePage);
+router.get("/:projectId", homePageController.getProjectDetailPage);
 
 export { router };

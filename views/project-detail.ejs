@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("includes/head.ejs") %>
+    <body>
+        <nav class="flex_container_col">
+            <ul class="nav_list_container">
+                <li><a href="../">Back</a></li>
+            </ul>
+        </nav>
+        <main class="flex_container_col">
+            <h1><%= project.title %></h1>
+            <p><%= project.description %></p>
+            <img
+                src="<%= project.image %>"
+                alt="project image"
+            />
+        </main>
+    </body>
+</html>

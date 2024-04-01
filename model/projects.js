@@ -9,10 +9,10 @@ const getProjectsFromFile = (cb) => {
     readFile(p, (err, fileContent) => {
 
         if (err) {
-            return cb([]);
+            cb([]);
+        } else {
+            cb(JSON.parse(fileContent));
         }
-
-        cb(JSON.parse(fileContent));
     });
 };
 
@@ -26,8 +26,6 @@ class Projects {
 
         getProjectsFromFile(projects => {
             const project = projects.find(project => project.id === id);
-
-            console.log(project);
 
             cb(project);
         });
