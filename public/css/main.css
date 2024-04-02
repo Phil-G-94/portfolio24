@@ -144,6 +144,10 @@ body {
     flex: 1;
 }
 
+.contact-section {
+    margin: 5em;
+}
+
 /* media queries */
 
 @media screen and (max-width <= 768px) {
