@@ -1,6 +1,7 @@
 /*
 Acknowledgements
-https://www.joshwcomeau.com/css/custom-css-reset/
+Reset - https://www.joshwcomeau.com/css/custom-css-reset/
+SVGs / icons - https://icons.getbootstrap.com/
 
 */
 
@@ -96,15 +97,7 @@ body {
     padding: 0;
 }
 
-.grid_container_col {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: 1;
-    place-items: center;
-    gap: 2em;
-}
-
-/* class styles */
+/* section styles */
 .about-me {
     margin: 5em;
 }
@@ -114,6 +107,10 @@ body {
     border: 2px solid black;
     width: 35%;
     align-self: end;
+}
+
+.projects-section {
+    margin: auto 5em;
 }
 
 .project_flex_container_col {
@@ -127,25 +124,24 @@ body {
     display: inherit;
     flex: 1;
     margin: 0.25rem;
-    /* */
-
-    background-color: blanchedalmond;
     border-radius: 1rem;
     padding: 1rem;
+    background-color: blanchedalmond;
 }
 
+/*
+ITEMS NOT EVENLY DISTRIBUTED WITHIN CONTAINER
+NEEDS CHANGING TO GRID ?
+*/
 .project_info {
     display: flex;
     flex-wrap: wrap;
+    align-content: center;
 }
 
 .project_info > * {
     display: inherit;
     flex: 1;
-}
-
-.contact-section {
-    margin: 5em;
 }
 
 /* media queries */
@@ -157,14 +153,6 @@ body {
         place-items: center;
     }
 
-    .grid_container_col {
-        display: grid;
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-columns: 1fr;
-        place-items: center;
-        gap: 2em;
-    }
-
     .flex_container_row {
         display: flex;
         flex-direction: row;
@@ -172,7 +160,7 @@ body {
     }
 }
 
-@media screen and (max-width > 768px) and (max-width < 1024px) {
+/* @media screen and (max-width > 768px) and (max-width < 1024px) {
     .flex_container_col {
         display: flex;
         flex-direction: column;
@@ -183,7 +171,7 @@ body {
 @media screen and (max-width > 1024px) {
     .flex_container_col {
         display: flex;
-        flex-direction: column;
+zz        flex-direction: column;
         place-items: center;
     }
-}
+} */

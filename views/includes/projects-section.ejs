@@ -1,8 +1,10 @@
 <article class="projects-section">
-    <h2><%= pageTitle %></h2>
+    <div class="flex_container_col">
+        <h2><%= pageTitle %></h2>
+    </div>
 
-    <section class="flex_container_col">
-        <p class="projects_text">
+    <section class="flex_container_col projects_text">
+        <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel impedit nemo aspernatur
             qui delectus atque voluptates nam totam. <br />
             In perspiciatis pariatur odio molestias dignissimos ex nulla repellat asperiores
@@ -20,6 +22,13 @@
                 <div class="project_info">
                     <p class="project_flex_item"><%= project.title %></p>
                     <p class="project_flex_item"><%= project.description %></p>
+                    <img
+                        class="project_flex_item"
+                        src="svg/box-arrow-up-right.svg"
+                        alt="external link"
+                        width="32"
+                        height="32"
+                    />
                 </div>
             </a>
             <% } %>

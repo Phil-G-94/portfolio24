@@ -1,20 +1,14 @@
 [
     {
-        "title": "Project 1",
-        "description": "Project one description",
+        "title": "This website :)",
+        "description": "Built with a node/expressJS backend, vanilla and good ol' fashioned HTML/CSS",
         "image": "images/stock-image.jpg",
         "id": "fa85ee67-49bd-4dd9-af1b-a0b1cef50d21"
     },
     {
-        "title": "Project 2",
-        "description": "Project two description",
+        "title": "DogHouse MMA - Website",
+        "description": "Built with React and its wider ecosystem. Powered by Vite!",
         "image": "images/stock-image.jpg",
         "id": "16dce918-ada6-41b1-bb73-81d66fbcd2e5"
-    },
-    {
-        "title": "Project 3",
-        "description": "Project three description",
-        "image": "images/stock-image.jpg",
-        "id": "10cdf3dc-6c5c-4635-9216-d542b57472f3"
     }
 ]

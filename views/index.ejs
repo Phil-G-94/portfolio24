@@ -6,12 +6,13 @@
         <main class="flex_container_col">
             <h1>Portfolio</h1>
 
+            <section id="contact-section"><%- include("includes/contact-section.ejs") %></section>
+
             <section id="about-me-section"><%- include("includes/about-me.ejs") %></section>
 
             <section id="projects-section">
                 <%- include("includes/projects-section.ejs", {projects: projects}) %>
             </section>
-            <section id="contact-section"><%- include("includes/contact-section.ejs") %></section>
         </main>
     </body>
 </html>
