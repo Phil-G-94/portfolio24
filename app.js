@@ -1,5 +1,8 @@
+import dotenv from "dotenv";
 import express from "express";
 import { router as homePageRoute } from "./routes/home.js";
+
+dotenv.config();
 
 const app = express();
 
