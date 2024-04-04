@@ -17,13 +17,13 @@
             <% for (const project of projects) { %>
             <a
                 href="/<%= project.id %>"
-                class="project_flex_item_col"
+                class="project_info_link"
             >
-                <div class="project_info">
-                    <p class="project_flex_item"><%= project.title %></p>
-                    <p class="project_flex_item"><%= project.description %></p>
+                <div class="project_info_grid">
+                    <p class="project_info_title"><%= project.title %></p>
+                    <p class="project_info_description"><%= project.description %></p>
                     <img
-                        class="project_flex_item"
+                        class="project_info_icon"
                         src="svg/box-arrow-up-right.svg"
                         alt="external link"
                         width="32"

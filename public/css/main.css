@@ -99,7 +99,7 @@ body {
 
 /* section styles */
 .about-me {
-    margin: 5em;
+    margin: auto 5em;
 }
 
 .profile_pic {
@@ -109,10 +109,6 @@ body {
     align-self: end;
 }
 
-.projects-section {
-    margin: auto 5em;
-}
-
 .project_flex_container_col {
     display: flex;
     flex-direction: column;
@@ -120,58 +116,49 @@ body {
     gap: 2rem;
 }
 
-.project_flex_item_col {
-    display: inherit;
-    flex: 1;
-    margin: 0.25rem;
+.project_info_link {
+    display: block;
+    background-color: blanchedalmond;
     border-radius: 1rem;
     padding: 1rem;
-    background-color: blanchedalmond;
+    margin: 0.25rem;
 }
 
-/*
-ITEMS NOT EVENLY DISTRIBUTED WITHIN CONTAINER
-NEEDS CHANGING TO GRID ?
-*/
-.project_info {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
+.project_info_grid {
+    display: grid;
+    grid-template-areas:
+        "title"
+        "description"
+        "icon";
 }
 
-.project_info > * {
-    display: inherit;
-    flex: 1;
+.project_info_title {
+    grid-area: "title";
+}
+
+.project_info_description {
+    grid-area: "description";
+}
+
+.project_info_icon {
+    grid: "icon";
 }
 
 /* media queries */
 
-@media screen and (max-width <= 768px) {
-    .flex_container_col {
-        display: flex;
-        flex-direction: column;
-        place-items: center;
-    }
-
-    .flex_container_row {
-        display: flex;
-        flex-direction: row;
-        place-items: center;
+@media screen and (min-width: 375px) {
+    .project_info_icon {
+        justify-self: center;
     }
 }
 
-/* @media screen and (max-width > 768px) and (max-width < 1024px) {
-    .flex_container_col {
-        display: flex;
-        flex-direction: column;
-        place-content: center;
-    }
+@media screen and (min-width: 768px) {
 }
 
-@media screen and (max-width > 1024px) {
-    .flex_container_col {
-        display: flex;
-zz        flex-direction: column;
-        place-items: center;
+@media screen and (min-width: 1024px) {
+    .project_info_icon {
+        grid: "icon";
+        justify-self: end;
+        margin-top: -3.5em;
     }
-} */
+}
