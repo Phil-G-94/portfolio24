@@ -1,6 +1,6 @@
 import dotenv from "dotenv";
 import express from "express";
-import { router as homePageRoute } from "./routes/home.js";
+import { router as homePageRoute } from "../routes/home.js";
 
 dotenv.config();
 
@@ -14,3 +14,5 @@ app.use(express.static("public"));
 app.use("/", homePageRoute);
 
 app.listen("6969");
+
+export default app;

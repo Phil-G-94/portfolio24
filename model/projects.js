@@ -7,7 +7,6 @@ const p = path.join(rootDir, "portfolio24", "data", "projects.json");
 
 const getProjectsFromFile = (cb) => {
     readFile(p, (err, fileContent) => {
-
         if (err) {
             cb([]);
         } else {
@@ -17,19 +16,16 @@ const getProjectsFromFile = (cb) => {
 };
 
 class Projects {
-
     static fetchAllProjectsFromFile(cb) {
         getProjectsFromFile(cb);
     }
 
     static fetchProjectById(id, cb) {
-
-        getProjectsFromFile(projects => {
-            const project = projects.find(project => project.id === id);
+        getProjectsFromFile((projects) => {
+            const project = projects.find((project) => project.id === id);
 
             cb(project);
         });
-
     }
 }
 
