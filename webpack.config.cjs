@@ -5,9 +5,9 @@ module.exports = {
     mode: 'production',
     entry: './src/app.js',
     output: {
-        path: path.join(__dirname, 'dist'),
+        path: path.join(__dirname, 'public'),
         publicPath: '/',
-        filename: 'final.js',
+        filename: 'bundle.js',
     },
     target: 'node',
 };
