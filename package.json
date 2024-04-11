@@ -1,13 +1,13 @@
 {
-    "name": "my-webpack-project",
+    "name": "portfolio24",
     "type": "module",
     "version": "1.0.0",
-    "description": "My webpack project",
+    "description": "My portfolio project",
     "main": "app.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node src/app.js",
-        "startdev": "nodemon src/app.js"
+        "start": "node app.js",
+        "startdev": "nodemon app.js"
     },
     "repository": {
         "type": "git",

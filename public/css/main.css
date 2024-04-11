@@ -117,11 +117,17 @@ body {
 }
 
 .project_info_link {
-    display: block;
     background-color: blanchedalmond;
     border-radius: 1rem;
     padding: 1rem;
-    margin: 0.25rem;
+    margin-top: 2em;
+}
+
+.project_info_link:hover {
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    transform: scale(1.05);
 }
 
 .project_info_grid {
@@ -144,6 +150,25 @@ body {
     grid: "icon";
 }
 
+.contact_flex_container_row {
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    list-style: none;
+    padding: 0;
+    gap: 2.5em;
+    margin: 2.5em;
+}
+
+.svgA:hover,
+.svgB:hover,
+.svgC:hover {
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    transform: scale(1.2);
+}
+
 /* media queries */
 
 @media screen and (min-width: 375px) {
@@ -157,7 +182,6 @@ body {
 
 @media screen and (min-width: 1024px) {
     .project_info_icon {
-        grid: "icon";
         justify-self: end;
         margin-top: -3.5em;
     }
