@@ -2,7 +2,7 @@ import { Projects } from "../model/projects.js";
 
 const getHomePage = (req, res, next) => {
     Projects.fetchAllProjectsFromFile((projects) => {
-        res.render("views/index", {
+        res.render("index", {
             pageTitle: "Projects",
             path: "/",
             projects: projects,
@@ -18,7 +18,7 @@ const getProjectDetailPage = (req, res, next) => {
             return;
         }
 
-        res.render("views/project-detail", {
+        res.render("project-detail", {
             project: project,
             pageTitle: project.title,
             path: `/project/${project.id}`,
