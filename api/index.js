@@ -13,6 +13,6 @@ app.use(express.static("public"));
 
 app.use("/", homePageRoute);
 
-app.listen("6969");
+app.listen("3884");
 
 export default app;
