@@ -7,7 +7,7 @@ dotenv.config();
 const app = express();
 
 app.set("view engine", "ejs");
-app.set("views", "views");
+app.set("views", "../views"); // https://stackoverflow.com/questions/78249773/vercel-showing-internal-server-error-after-deploying-express-app-successfully
 
 app.use(express.static("public"));
 
