@@ -7,9 +7,9 @@ dotenv.config();
 const app = express();
 
 app.set("view engine", "ejs");
-app.set("views", path.join(__dirname, "/views")); // https://stackoverflow.com/questions/78249773/vercel-showing-internal-server-error-after-deploying-express-app-successfully
+app.set("views", "../views"); // https://stackoverflow.com/questions/78249773/vercel-showing-internal-server-error-after-deploying-express-app-successfully
 
-app.use(express.static("public"));
+app.use(express.static("../public"));
 
 app.use("/", homePageRoute);
 
